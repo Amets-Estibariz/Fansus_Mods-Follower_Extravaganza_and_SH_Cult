@@ -1,0 +1,28 @@
+{"recipes":
+	[
+
+    {
+	id: "fancyhq",
+	label: "Find an unusual location in the city",
+	actionId: "fancy",
+	requirements: {hq:1},
+	effects: {followerpub:1,culthydrae_1:1},
+	warmup:10,
+	startdescription: "Something interesting remains hidden from me in this city.",
+	description: "Here is a pub where the exceptional congregate, and here is a cult for the most senseless things.",
+	craftable: true,
+	},
+	{
+	id: "pubcrawl",
+	label: "Ten toasts to friendship",
+	actionId: "explore",
+	requirements: {followerpub:1,funds:1},
+	deckeffect: {"fansus_followerdraw":3},
+	effects: {funds:-1},
+	warmup:60,
+	startdescription: "Sit around long enough, buy enough drinks, and somebody interesting will find you.",
+	description: "The smell of alcohol. A heated conversation. An unwise bet. When morning comes, we'll be as close as friends can be.",
+	craftable: true,
+	},
+]
+}
