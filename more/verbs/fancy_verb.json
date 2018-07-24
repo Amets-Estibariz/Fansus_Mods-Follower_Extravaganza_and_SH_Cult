@@ -3,7 +3,7 @@
             "id": "fancy",
             "label": "Fancy",
             "description": "A cult with one member is only an unusual habit.",
-			"atStart": false,
+			"atStart": true,
 						  slots: [{id:"Fancy",description: "Anything. Anything at all. Please."
 			  }],
         },
