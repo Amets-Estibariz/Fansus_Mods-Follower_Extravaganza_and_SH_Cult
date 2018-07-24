@@ -24,5 +24,93 @@
 	description: "The smell of alcohol. A heated conversation. An unwise bet. When morning comes, we'll be as close as friends can be.",
 	craftable: true,
 	},
+	
+	
+	
+	
+	
+	
+	
+	
+		  	   {id: "followeraction_divisionhighhydrae",
+	   label: "Cult Business: Division",
+	  actionId:"talk",
+	  startdescription:"My Grimoire knows enough about the hidden workings of the world to press their thumbs into its weak spots, and reveal a dear secret of the other histories.",
+	  description:".",
+	  requirements: {society:1,secrethistories:10,follower:1},
+	  linked: [{id:"followeraction_divisionsuccesshigh",chance:100},
+	  ]
+	  },
+
+	  	   {id: "followeraction_divisionmidhydrae",
+	   	   label: "Cult Business: Division",
+	  actionId:"talk",
+	  startdescription:"My Disciple probably knows enough about the hidden workings of the world to press their thumbs into its weak spots, and reveal a secret of the other histories. But one may not go far into the Histories without a little risk.",
+	  requirements: {society:1,secrethistories:5,follower:1},
+	  linked: [{id:"followeraction_divisionsuccessmid",chance:80},
+	  {id:"followeraction_divisionfailure",chance:100}
+	  ]
+	  },
+	  	  	   {id: "followeraction_divisionlowhydrae",
+	   	   label: "Cult Business: Division",
+	  actionId:"talk",
+	  startdescription:"My Believer might know enough about the hidden workings of the world to press their thumbs into its weak spots, and reveal a simple secret of the other histories. There are, as always, risks.",
+	  requirements: {society:1,secrethistories:1,follower:1},
+	  linked: [{id:"followeraction_divisionsuccesslow",chance:60},
+	  {id:"followeraction_divisionfailure",chance:100}
+	  ]
+	  },
+	  
+	  
+	  {id: "followeraction_divisionsuccesshigh",
+	   label: "A Scar on the Neck",
+	  actionId:"talk",
+	  startdescription: "Hours of scholarship and sabotage...",
+	  description:"My follower has carved out a way to somewhere that does not belong in this History.",
+	  effects: {erudition:1},
+	  deckeffect: {"fansus_divisionlorehigh":1},
+	  warmup:30	  
+	  },
+	  {id: "followeraction_divisionsuccessmid",
+	   label: "A Scar on the Neck",
+	  actionId:"talk",
+	  startdescription: "Hours of scholarship and sabotage...",
+	  description:"My follower has carved out a way to somewhere that does not belong in this History.",
+	  effects: {erudition:1},
+	  deckeffect: {"fansus_divisionloremid":1},
+	  warmup:30	  
+	  },	
+	  {id: "followeraction_divisionsuccesslow",
+	   label: "A Scar on the Neck",
+	  actionId:"talk",
+	  startdescription: "Hours of scholarship and sabotage...",
+	  description:"My follower has carved out a way to somewhere that does not belong in this History.",
+	  effects: {erudition:1},
+	  deckeffect: {"fansus_divisionlorelow":1},
+	  warmup:30	  
+	  },	
+	  
+	  
+	  
+	  
+	  {id: "followeraction_divisionfailure",
+	   label: "A Scar on the Neck",
+	  actionId:"talk",
+	  startdescription: "Hours of scholarship and sabotage...",
+	  description:"My follower has committed a dangerous error. Their body is still intact, but the histories have revealed an unpleasant pseudo-truth.",
+	  effects: {dread:1},
+	  alternativerecipes: [{id:"followeraction_divisionfailure_losefollower",chance:30}],
+	  warmup:30	  
+	  },
+	  	  {id: "followeraction_divisionfailure_losefollower",
+	   label: "Beneath the World's Skin",
+	  actionId:"talk",
+	  startdescription: "Hours of scholarship and sabotage...",
+		  description:"My follower has committed a dangerous error. The branches of the Histories has touched the world here. In their attempt to divide the histories, they have carved into themselves. They will recover their senses in time, but they are badly hurt. [Heal a fallen Follower with Talk.]"
+	  effects: {fascination:1},
+	  	mutations:[{filterOnAspectId:mortal,mutateAspectId:follower_wound,mutationLevel:1,additive:false},
+	{filterOnAspectId:mortal,mutateAspectId:follower,mutationLevel:-1,additive:false}],
+	  warmup:30	  
+	  },
 ]
 }

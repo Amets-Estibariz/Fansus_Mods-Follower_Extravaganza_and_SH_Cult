@@ -1,6 +1,5 @@
 {"decks":
 [
-	
 	{id: "fansus_followerdraw",
 	label:"New Acquaintances",
 	description:"Every day, I meet the strangest people.",
@@ -53,5 +52,48 @@ defaultcard: "general_a",
 resetonexhaustion:false	
 	},
 
+	
+		{id: "fansus_divisionlorehigh",
+	label:"A Deep Incision",
+	description:"Something controversially obscure.",
+	spec:
+	["fragmentsecrethistoriesg",
+	"fragmentsecrethistoriesf",
+	"fragmentsecrethistoriese",
+	"fragmentsecrethistoriesf",
+	"fragmentsecrethistoriesg",
+	"fragmentsecrethistoriese",
+	],
+defaultcard: "erudition",
+resetonexhaustion:true	
+	},
+		{id: "fansus_divisionloremid",
+	label:"An Incision",
+	description:"Something controversially obscure.",
+	spec:
+	["fragmentsecrethistoriese",
+	"fragmentsecrethistoriesd",
+	"fragmentsecrethistoriesc",
+	"fragmentsecrethistoriese",
+	"fragmentsecrethistoriesd",
+	"fragmentsecrethistoriesc",
+	],
+defaultcard: "erudition",
+resetonexhaustion:true	
+	},
+		{id: "fansus_divisionlorelow",
+	label:"A Surface Incision",
+	description:"Something controversially obscure.",
+	spec:
+	["fragmentsecrethistories",
+	"fragmentsecrethistoriesb",
+	"fragmentsecrethistoriesc",
+	"fragmentsecrethistories",
+	"fragmentsecrethistoriesb",
+	"fragmentsecrethistoriesc",
+	],
+defaultcard: "erudition",
+resetonexhaustion:true	
+	},
 ]
 }
